@@ -95,5 +95,5 @@ This project is deployed using **GitHub Pages** for public access.
 ## 👨‍💻 Author
 
 **Tamilselvan**
-Frontend Developer
-GitHub: [https://github.com/tamilselvanmuruga](https://github.com/tamilselvanmuruga)
+*Frontend Developer
+*GitHub: [https://github.com/tamilselvanmuruga](https://github.com/tamilselvanmuruga)
