@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg{
+            margin: 0px;
+            background-color: black;
+        }
+        #con{
+            width: 100vw;
+            height: 100vh;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 50px;
+        
+        }
+        button{
+            color: rgb(255, 255, 255);
+            border: 3px solid rgb(255, 253, 253);
+            padding: 10px;
+            border-radius: 10px;
+            background-color: black;
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body id="bg">
+    <div id="con">
+    <h1 id="colo">welcome</h1>
+    <button id="bu" onclick="change()">Light</button>
+    <script>
+        function change()
+        {
+           document.getElementById('colo').style.color='black'
+           document.getElementById('bg').style.backgroundColor='white'
+           document.getElementById('bu').innerHTML='light'
+           document.getElementById('bu').style.backgroundColor='white'
+           document.getElementById('bu').style.border='3px solid black'
+           document.getElementById('bu').style.color='black'
+        }
+        
+    </script>
+    <button id="bu" onclick="changein()">Dark</button>
+    <script>
+        function changein()
+        {
+           document.getElementById('colo').style.color='white'
+           document.getElementById('bg').style.backgroundColor='black'
+           document.getElementById('bu').innerHTML='Light'
+           document.getElementById('bu').style.backgroundColor='black'
+           document.getElementById('bu').style.border='3px solid white'
+           document.getElementById('bu').style.color='white'
+        }
+        
+    </script>
+    </div>
+</body>
+</html>

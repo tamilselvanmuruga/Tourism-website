@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(238, 255, 255);
+        }
+
+        .cls1 {
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            overflow: hidden;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .cls2 {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        .cls2:hover {
+            color: red;
+            transition: 0.5s;
+        }
+
+        .cls3 {
+            width: 100%;
+            height: 100px;
+            padding-top: 50px;
+            background-color: rgb(133, 192, 255);
+            display: flex;
+            gap: 20px;
+            position: fixed;
+        }
+
+        .cls4 {
+            color: black;
+        }
+
+        .cls5 {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 80px;
+            width: 200px;
+            font-size: 15px;
+        }
+
+        .cls8 {
+            font-size: 20px;
+            margin-left: 80px;
+        }
+
+        .cls6 {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-left: 80px;
+            width: 300px;
+            font-size: 15px;
+        }
+
+        .cls7 {
+            width: 200px;
+            height: 700px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 3px 2px;
+            margin-left: 40px;
+            margin-top: 155px;
+            padding: 5px;
+            position: sticky;
+            top: 180px;
+            z-index: -1;
+
+        }
+
+        h3 {
+            font-size: 20px;
+            display: inline;
+        }
+
+        .cls9 {
+            display: block;
+        }
+
+        .cls10 {
+            margin-left: 110px;
+            border: 1px solid orange;
+            padding: 2px;
+            background-color: orange;
+        }
+
+        .cls10:hover {
+            background-color: rgb(251, 197, 128);
+        }
+
+        .cls11 {
+            width: 800px;
+            height: 200px;
+            border: 2px solid black;
+            margin-left: 50px;
+            margin-top: 20px;
+            border-radius: 20px;
+            display: flex;
+            margin-left: 220px;
+        }
+
+        .cls11:hover {
+            border: 2px solid rgb(140, 255, 0);
+        }
+
+        .cls14 {
+            display: flex;
+        }
+
+        .cls16 {
+            height: 200px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        .cls15 {
+            margin-top: 170px;
+        }
+
+        .cls17 h5 {
+            position: relative;
+            top: 80px;
+            left: 10px;
+            padding-top: 10px;
+            font-family: "Inter", sans-serif;
+            font-size: 15px;
+            z-index: -1;
+        }
+
+        .cls17 h2 {
+            position: relative;
+            left: 10px;
+            z-index: -1;
+        }
+
+        .cls17 h3 {
+            position: relative;
+            left: 450px;
+            z-index: -1;
+        }
+
+        .cls17 button {
+            background-color: greenyellow;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: relative;
+            left: 440px;
+            bottom: 10px;
+            z-index: -1;
+
+        }
+
+        .cls17 p {
+            position: relative;
+            left: 400px;
+            bottom: 120px;
+            z-index: -1;
+        }
+        .cls12 {
+            
+            color: white;
+            padding-left: 50px;
+        }
+
+        #fb {
+            color: red;
+            padding: 10px;
+        }
+
+        .cls13 {
+            background-color: black;
+            display: flex;
+            gap: 300px;
+        }
+        h4{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="cls1">
+        <a href="home.html" class="cls2">Home</a>
+        <a href="heritage.html" class="cls2">Heritage</a>
+        <a href="gallery.html" class="cls2">Gallery</a>
+        <a href="feedback.html" class="cls2">Feed back</a>
+        <a href="hotel.html" class="cls2">Hotel</a>
+    </nav>
+    <div class="cls3">
+        <div class="cls4">
+            <label class="cls8">Place:</label><br>
+            <input type="text" placeholder="Enter your place" class="cls6">
+        </div>
+        <div class="cls4">
+            <label class="cls8">Check In:</label><br>
+            <input type="date" placeholder="Enter your Date" class="cls5">
+        </div>
+        <div class="cls4">
+            <label class="cls8">Check Out:</label><br>
+            <input type="date" placeholder="Enter your Date" class="cls5">
+        </div>
+        <div class="cls4">
+            <label class="cls8">Rooms:</label><br>
+            <select name="Rooms" id="" class="cls6">
+                <option value="">Default</option>
+                <option value="">Single Room</option>
+                <option value="">Double Room</option>
+                <option value="">Family Room</option>
+                <option value="">Party Room</option>
+            </select>
+        </div>
+    </div>
+    <div class="cls14">
+        <div class="cls7">
+            <h3>Filter</h3><button class="cls10">Done</button>
+            <h4>Price</h4>
+            <input type="checkbox"><label> 500-1k</label><br>
+            <input type="checkbox"><label> 1k-2k</label><br>
+            <input type="checkbox"><label> 2k-3k</label><br>
+            <input type="checkbox"><label> 3k-4k</label><br>
+            <input type="checkbox"><label> 4k-5k</label><br>
+            <input type="checkbox"><label> 5k-10k</label><br><br>
+            <h4>Normal</h4>
+            <input type="checkbox"><label> Single Room</label><br>
+            <input type="checkbox"><label> Double Rooms</label><br>
+            <input type="checkbox"><label> Triple Rooms</label><br>
+            <input type="checkbox"><label> Family Rooms</label><br>
+            <input type="checkbox"><label> Party Rooms</label><br><br>
+            <h4>Hotel Rule</h4>
+            <input type="checkbox"><label> Drinks allowed</label><br>
+            <input type="checkbox"><label> Pets allowed</label><br>
+            <input type="checkbox"><label> Visters allowed</label><br><br>
+            <h4>Star rating</h4>
+            <input type="checkbox"><label> 3star</label><br>
+            <input type="checkbox"><label> 4star</label><br>
+            <input type="checkbox"><label> 5star</label><br><br>
+            <h4>User rating</h4>
+            <input type="checkbox"><label> 3star</label><br>
+            <input type="checkbox"><label> 3.5+star</label><br>
+            <input type="checkbox"><label> 4.5+star</label><br><br>
+        </div>
+        <div class="cls15">
+            <div class="cls11">
+                <img src="../images/hotel1.jpg" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>The Oberoi Udaivilas, Udaipur</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:15k</h3>
+                    <p>Rating:⭐⭐⭐⭐✰</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel2.jpeg" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>The Oberoi Grand, Kolkata</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:25k</h3>
+                    <p>Rating:⭐⭐⭐⭐</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel3.jpg" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>SUJÁN Rajmahal Palace, Jaipur</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:30k</h3>
+                    <p>Rating:⭐⭐⭐⭐⭐</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel4.jpg" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>TNarendra Bhawan, Bikaner</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:28k</h3>
+                    <p>Rating:⭐⭐⭐⭐⭐</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel5.webp" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>The Lodhi, New Delhi</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:15k</h3>
+                    <p>Rating:⭐⭐⭐⭐✰</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel6.jpg" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>Kumarakom Lake Resort, Kerala</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:25k</h3>
+                    <p>Rating:⭐⭐⭐⭐⭐</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel7.avif" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>The ITC Grand Chola, Chennai</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:35k</h3>
+                    <p>Rating:⭐⭐⭐⭐⭐</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+            <div class="cls11">
+                <img src="../images/hotel8.webp" alt="" class="cls16">
+                <div class="cls17">
+                    <h2>The Leela Palace, Chennai</h2><br>
+                    <h5>Free Cancellation</h5>
+                    <h5>Family Resort</h5>
+                    <h3>Price:32k</h3>
+                    <p>Rating:⭐⭐⭐⭐✰</p>
+                    <button>BookNow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div><br>
+    <div class="cls13">
+        <div class="cls12">
+            <h1>About Us:</h1>
+<pre>Welcome to Xploree! We 
+are passionate about 
+helping you discover 
+the beauty and culture 
+of India. From snowy 
+mountains to sunny beaches,
+we bring you the best 
+travel experiences, 
+memories, and adventures.
+
+</pre>
+        </div>
+        <div class="cls12">
+            <h2>Social Media:</h2>
+            <a href="https://facebook.com/XploreeTravel" target="_blank"><i class="fab fa-facebook-f"
+                    id="fb"></i></a>https://facebook.com/XploreeTravel<br>
+            <a href="https://instagram.com/XploreeTravel" target="_blank"><i class="fab fa-instagram"
+                    id="fb"></i></a>https://instagram.com/XploreeTravel<br>
+            <a href="https://twitter.com/XploreeTravel" target="_blank"><i class="fab fa-twitter" id="fb"></i></a>https://twitter.com/XploreeTravel<br>
+            <a href="https://youtube.com/XploreeTravel" target="_blank"><i class="fab fa-youtube" id="fb"></i></a>https://youtube.com/XploreeTravel<br>
+            <a href="https://wa.me/919000000000" target="_blank"><i class="fab fa-whatsapp" id="fb"></i></a>https://wa.me/919000000000<br>
+        </div>
+        <div class="cls12">
+            <h1>Contect Us:</h1>
+            <h4>Email:abc3@gamil.com</h4>
+             <h4><Address>17/b BTM1st stage bangalore abi colony</Address></h4>
+             <h4>contact:919000000</h4>
+           </h4>
+        </div>
+    </div>
+</body>
+
+</html>

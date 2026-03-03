@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        nav{
+            width: 100vw;
+            height: 60px;
+            background-color: black;
+            padding: 30px;
+        }
+            .on{
+                font-size: 40px;
+                color: white;
+                text-decoration: none;
+                margin-right: 200px;
+            }
+            button{
+                color: white;
+                background-color: rgb(3, 3, 3);
+                border: none;
+                font-size: 30px;
+            }
+    </style>
+</head>
+<body>
+    <nav id="bur">
+    <a href="" class="on">Home</a>
+    <a href="" class="on">About</a>
+    <a href=""class="on">Product</a>
+    <a href="" class="on">Login</a>
+    <button id="bu" onclick="change()">x</button>
+    <script>
+         function change(){
+           document.getElementById('bur').style.transitionDuration='3s'
+           document.getElementById('bur').style.opacity='0'
+           document.getElementById('bur').style.visibility='hidden'
+           document.getElementById('bur').style.transform='translatey(-100px)'
+         }
+    </script>
+</nav>
+</body>
+</html>
